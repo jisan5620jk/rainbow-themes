@@ -1,0 +1,1273 @@
+/* Normal desktop :1200px. */
+@media screen and (max-width: 1600px) {
+  /* Banner Section */
+
+  .banner-shape {
+    right: 0rem;
+  }
+
+  /* Section Title */
+
+  .gneat-section-title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /* About Us Inner Page */
+
+  .about-video-btn {
+    right: 40px;
+  }
+
+  .about-right::before {
+    bottom: 2px;
+    right: 15%;
+  }
+
+  /* Counter Section */
+
+  .counter-single-box {
+    height: 300px;
+    width: 300px;
+  }
+
+  /* Work Process Section */
+
+  .work-process-box-inner {
+    padding: 0 30px 20px 40px;
+  }
+
+  .work-process-box-inner span::before {
+    left: -41px;
+  }
+
+  .work-process-box-icon {
+    left: 19px;
+  }
+
+  /* Team Member Section */
+
+  .team-box-style2 {
+    margin-right: 20px;
+  }
+
+  .team-single-box.style3 {
+    left: -30px;
+  }
+
+  /* Blog Section */
+
+  .img-box {
+    height: 398px;
+  }
+
+  /* Footer Section */
+
+  footer {
+    padding: 142px 0 0;
+  }
+
+  .footer-section::before {
+    left: -8rem;
+    width: 111%;
+  }
+
+  .footer-right-title h2 {
+    font-size: 44px;
+  }
+
+  /* About Us Inner Page */
+
+  .about-inner-content::before {
+    bottom: 2px;
+    right: 15%;
+  }
+
+  /* About Me Inner page */
+
+  .about-me-thumb img {
+    margin-left: -1rem;
+  }
+
+  /* Project Inner Page */
+
+  .project-thumb-title h4 a {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  /* Shop Inner Page */
+
+  .shop-rate-list ul li {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .shop-rate-right {
+    margin: 6px 0 20px 2rem;
+  }
+
+  /* Blog List Inner Page */
+
+  @keyframes dance3 {
+    100% {
+      -webkit-transform: translateX(266px);
+    }
+  }
+
+  .blog-contact-title h2 {
+    font-size: 40px;
+  }
+
+  /* Blog Details Inner Page */
+
+  .blog-details-btn-box-content a {
+    font-size: 16px;
+  }
+
+  /* Team Details Inner Page Contact Section */
+
+  .team-details-contact-desc p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1386px;
+  }
+}
+
+/* Normal desktop :992px. */
+@media only screen and (max-width: 1199px) {
+  /* Header Section */
+
+  .header-right-box {
+    margin-right: -10.5rem;
+  }
+
+  /* Banner Section */
+
+  .banner-title h1 {
+    font-size: 105px;
+    line-height: 120px;
+  }
+
+  .banner-desc p {
+    top: 9.8rem;
+  }
+
+  .banner-desc p {
+    width: 48%;
+    top: 9.8rem;
+  }
+
+  .banner-shape {
+    top: 5rem;
+    right: 0rem;
+  }
+
+  /* Section Title */
+
+  .gneat-section-title h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  /* About Section */
+
+  .about-left-counter h1 {
+    font-size: 60px;
+  }
+
+  .about-right::before {
+    bottom: 3px;
+    right: 17%;
+  }
+
+  /* Service Section */
+
+  .gneat-section-title h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .service-item {
+    gap: 14px;
+  }
+
+  .service-item .btn_wrapper {
+    margin-left: -20px;
+  }
+
+  /* Counter Section */
+
+  .counter_wrapper {
+    height: 264px;
+    width: 264px;
+  }
+
+  .counter-single-box {
+    height: 264px;
+    width: 264px;
+  }
+
+  /* Portfolio Section */
+
+  .project-wrapper {
+    padding: 0 25px;
+  }
+
+  .project-title h3 {
+    font-size: 26px;
+  }
+
+  /* Team Member Section */
+
+  .team-section {
+    padding-right: 40px;
+  }
+
+  .team-box-thumb img {
+    width: 100%;
+  }
+
+  .team-box-social {
+    width: 267px;
+    height: 286px;
+  }
+
+  .team-box-style2 {
+    margin-right: 26px;
+  }
+
+  .team-single-box.style3 {
+    left: -5px;
+    margin-left: -1rem;
+  }
+
+  .team-single-box.style3 .team-box-social {
+    height: 318px;
+    width: 296px;
+  }
+
+  .team-single-box.style3.active .team-box-social,
+  .team-single-box.style3:hover .team-box-social {
+    right: -29px;
+    top: -23px;
+  }
+
+  /* Blog Secttion */
+
+  .img-box {
+    height: 330px;
+  }
+
+  .blog-box-title a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Footer Section */
+
+  footer {
+    padding: 160px 0 0;
+  }
+
+  .footer-address-desc p > br {
+    display: none;
+  }
+
+  .footer-right-title h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  .footer-right-desc p {
+    width: 90%;
+  }
+
+  .footer-shape {
+    right: 0.6rem;
+  }
+
+  .footer-shape img {
+    width: 80%;
+  }
+
+  /* Breadcrumb Section */
+
+  .breadcrumb-desc p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  /* About Us Inner Page */
+
+  .about-inner-content::before {
+    bottom: 3px;
+    right: 17%;
+  }
+
+  /* About Me Inner page */
+
+  .about-me-thumb img {
+    margin-left: -1rem;
+  }
+
+  /* Newsletter Inner Section */
+
+  .newsletter-form input {
+    width: 454px;
+  }
+}
+
+/* Tablet desktop :768px. */
+@media only screen and (max-width: 991px) {
+  /* Header Section */
+
+  .header-right-box {
+    margin-right: -8rem;
+  }
+
+  /* Banner Section */
+
+  .banner-title h1 {
+    font-size: 82px;
+    line-height: 100px;
+  }
+
+  .banner-desc p {
+    width: 42%;
+    top: 7rem;
+  }
+
+  .banner-shape {
+    top: 5rem;
+    right: -3rem;
+  }
+
+  /* Section Title */
+
+  .gneat-section-title h2 {
+    font-size: 42px;
+    line-height: 54px;
+  }
+
+  /* Service Section */
+
+  .service-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-top-btn {
+    justify-content: start;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* Process Section */
+
+  .work-process-date h5 {
+    font-size: 20px;
+  }
+
+  /* Counter Section */
+
+  .counter-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counter_wrapper:first-child,
+  .counter_wrapper:nth-child(3) {
+    margin-left: 0px;
+  }
+
+  .counter_wrapper:nth-child(1),
+  .counter_wrapper:nth-child(2) {
+    margin-bottom: -20px;
+  }
+
+  .counter_wrapper:nth-child(3),
+  .counter_wrapper:nth-child(4) {
+    margin-top: -20px;
+  }
+
+  /* Portfolio Section */
+
+  .project-wrapper {
+    padding: 0 25px;
+  }
+
+  .project-sub-title h6 {
+    font-size: 16px;
+  }
+
+  .project-title h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Testimonial Section */
+
+  .testimonial-left {
+    margin-bottom: 40px;
+  }
+
+  .testimonial-desc p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  /* Team Member Section */
+
+  .team-box-style2 {
+    margin-right: 32px;
+  }
+
+  .team-single-box.style3 {
+    margin-top: 30px;
+    margin-right: 35px;
+  }
+
+  /* Blog Section */
+
+  .img-box {
+    height: 375px;
+  }
+
+  /* Footer Section */
+
+  footer {
+    padding: 160px 0 0;
+  }
+
+  .footer-section::before {
+    width: 147%;
+  }
+
+  .footer-section::after {
+    top: inherit;
+    bottom: 0;
+    width: 54%;
+    height: 59%;
+  }
+
+  .footer-right-title h2 {
+    padding-top: 30px;
+  }
+
+  .footer-bottom-desc p a {
+    mix-blend-mode: difference;
+  }
+
+  /* BreadCrumb Section */
+
+  video.breadcrumb-bg {
+    left: -8%;
+    width: auto;
+    height: 100%;
+  }
+
+  .breadcrumb-desc p {
+    margin: 30px 0 0;
+  }
+
+  /* About Us Inner Page */
+
+  .about-inner-content {
+    margin-top: 184px;
+  }
+
+  /* About Me Inner page */
+
+  .about-me-thumb img {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .team-details-skill-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Large Mobile :600px. */
+@media only screen and (max-width: 767px) {
+  /* Header Section */
+
+  .header-area {
+    padding: 14px 5%;
+  }
+
+  /* Banner Section */
+
+  .banner-title h1 {
+    font-size: 58px;
+    line-height: 70px;
+  }
+
+  .banner-desc p {
+    width: 70%;
+    position: relative;
+    top: 0;
+    margin-top: 30px;
+  }
+
+  .banner-btn a {
+    width: 260px;
+  }
+
+  .banner-video {
+    bottom: -4.7rem;
+  }
+
+  .banner-shape {
+    right: -1rem;
+  }
+
+  /* Content Slider Section */
+
+  .content-slider-content h2 {
+    margin: 0 20px 0 0;
+  }
+
+  /* About Section */
+
+  .about-left-counter h1 {
+    font-size: 60px;
+  }
+
+  .about-right::before {
+    bottom: 1px;
+    right: 15%;
+  }
+
+  /* Section Title */
+
+  .gneat-section-title h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  /* Service Section */
+
+  .service-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-top-btn {
+    justify-content: start;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .service-desc p {
+    width: 286px;
+  }
+
+  /* Process Section */
+
+  .work-process-date h5 {
+    font-size: 20px;
+  }
+
+  /* Counter Section */
+
+  .counter-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counter_wrapper {
+    height: 280px;
+    width: 280px;
+  }
+
+  .counter_wrapper:first-child,
+  .counter_wrapper:nth-child(3) {
+    margin-left: 0px;
+  }
+
+  .counter_wrapper:nth-child(1),
+  .counter_wrapper:nth-child(2) {
+    margin-bottom: -20px;
+  }
+
+  .counter_wrapper:nth-child(3),
+  .counter_wrapper:nth-child(4) {
+    margin-top: -20px;
+  }
+
+  .counter-single-box {
+    height: 280px;
+    width: 280px;
+  }
+
+  /* Portfolio Section */
+
+  .project-wrapper {
+    width: 80vw;
+    padding: 0 25px;
+  }
+
+  .project-sub-title h6 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 17px 0 0;
+  }
+
+  .project-title h3 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+  }
+
+  /* Testimonial Section */
+
+  .testimonial-left {
+    margin-bottom: 40px;
+  }
+
+  /* Team Member Section */
+
+  .team-box-style2 {
+    margin-right: 30px;
+  }
+
+  .team-desc p {
+    width: 90%;
+  }
+
+  .team-single-box.style3 {
+    margin-top: 30px;
+    margin-right: 45px;
+  }
+
+  /* Blog Section */
+
+  .img-box {
+    height: 576px;
+  }
+
+  /* Footer Section */
+
+  footer {
+    padding: 160px 0 0;
+  }
+
+  .footer-section::before {
+    width: 52.8rem;
+  }
+
+  .footer-section::after {
+    top: inherit;
+    bottom: 0;
+    width: 107%;
+    height: 36%;
+  }
+
+  .footer-right-title h2 {
+    padding-top: 30px;
+  }
+
+  .footer-right-desc p {
+    width: 60%;
+  }
+
+  .footer-bottom-desc p {
+    color: #ffffff;
+  }
+
+  .footer-bottom-desc p a {
+    mix-blend-mode: difference;
+  }
+
+  /* BreadCrumb Section */
+
+  video.breadcrumb-bg {
+    left: -28%;
+    width: auto;
+    height: 100%;
+  }
+
+  .breadcrumb-desc p {
+    margin: 30px 0 0;
+    font-size: 18px;
+  }
+
+  /* Video Bg Inner Page */
+
+  .video-section .modal-bg {
+    min-height: 300px;
+  }
+
+  .video-section .video-section-btn {
+    width: 130px;
+    height: 130px;
+  }
+
+  a.video-btn {
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+  }
+
+  .text-inner svg {
+    width: 130px;
+  }
+
+  .text-inner text {
+    font-size: 26px;
+  }
+
+  .video-btn i {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  /* About Us Inner Page */
+
+  .about-inner-content {
+    margin-top: 184px;
+  }
+
+  .about-inner-content::before {
+    bottom: 1px;
+    right: 15%;
+  }
+
+  /* NewsLetter Inner Page */
+
+  .gneat-section-title h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .newsletter-form .app {
+    top: 0;
+  }
+
+  .newsletter-form input {
+    padding: 14px 30px;
+    width: 370px;
+  }
+
+  /* About Me Inner page */
+
+  .about-me-thumb img {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .team-details-skill-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* About Me Inner Page Contact Section */
+
+  section.team-details-contact {
+    margin: 0;
+  }
+
+  .team-details-contact-desc p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* small mobile :320px. */
+@media only screen and (max-width: 575px) {
+  p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  /* Settings */
+
+  .settings_sidebar {
+    width: 100%;
+  }
+
+  /* Header Section */
+
+  .header-bar-content {
+    display: none;
+  }
+
+  /* Banner Section */
+
+  .banner-top {
+    padding: 200px 0 400px;
+  }
+
+  .banner-content {
+    padding-left: 0;
+  }
+
+  .banner-sub-title {
+    margin-bottom: 15px;
+  }
+
+  .banner-title h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .banner-desc p {
+    width: 90%;
+    position: relative;
+    top: 0;
+    margin-top: 30px;
+  }
+
+  .banner-btn a {
+    width: 246px;
+  }
+
+  .banner-video {
+    bottom: -14.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner-shape img {
+    max-width: 64px;
+    top: 5.3rem;
+    right: 1rem;
+  }
+
+  .banner-left {
+    display: none;
+  }
+
+  .banner-left-content {
+    margin-left: -48px;
+  }
+
+  .banner-left-content a {
+    font-size: 20px;
+  }
+
+  .banner-left-social ul li a {
+    font-size: 16px;
+  }
+
+  /* Content Slider Section */
+
+  .content-slider-content h2 {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+
+  /* About Section */
+
+  .about-bg {
+    padding: 120px 0 150px;
+  }
+
+  .about-left-thumb img {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .about-left-counter h1 {
+    font-size: 50px;
+  }
+
+  .about-right-desc p {
+    width: 90%;
+  }
+
+  .about-right-thumb img {
+    bottom: -16.6rem;
+  }
+
+  .about-right::before {
+    bottom: 8px;
+    right: 24%;
+  }
+
+  /* Section Title */
+
+  .gneat-section-title h2 {
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  /* Service Section */
+
+  section.service-section {
+    padding: 150px 0 120px;
+  }
+
+  .service-top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-top-desc p {
+    margin: 20px 0 0;
+  }
+
+  .service-top-btn {
+    justify-content: start;
+  }
+
+  .service-item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .service-desc p {
+    width: 94%;
+  }
+
+  /* Counter Section */
+
+  .counter-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .counter_wrapper {
+    height: 290px;
+    width: 290px;
+    margin-left: 0px;
+  }
+
+  .counter_wrapper {
+    margin: -20px 0 -20px;
+  }
+
+  .counter-single-box {
+    height: 290px;
+    width: 290px;
+  }
+
+  /* Portfolio Section */
+
+  section.project-section {
+    padding: 80px 0 20px;
+  }
+
+  .project-wrapper {
+    width: 55vh;
+    padding: 0 13px;
+  }
+
+  .project-sub-title h6 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 17px 0 0;
+  }
+
+  .project-title h3 {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 600;
+  }
+
+  /* Process Section */
+
+  .work-process-date h5 {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .work-process-date {
+    margin-top: 42px;
+  }
+
+  .work-process-date h5 {
+    font-size: 16px;
+  }
+
+  /* Testimonial Section */
+
+  .testimonial-shape {
+    width: 296px;
+    height: 296px;
+    top: -3rem;
+  }
+
+  .testimonial-thumb img {
+    width: 100%;
+  }
+
+  .testimonial-thumb-quote {
+    position: absolute;
+    top: 9rem;
+    right: 2.5rem;
+  }
+
+  .testimonial-thumb-quote i {
+    height: 200px;
+    width: 200px;
+    font-size: 80px;
+  }
+
+  .testimonial-left {
+    margin-bottom: 70px;
+  }
+
+  .testimonial-desc p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* Team Member Section */
+
+  .team-single-box.style1 .team-box-thumb {
+    position: relative;
+    display: inline-block !important;
+    width: 228px;
+  }
+
+  .team-single-box.style1 .team-box-thumb img {
+    width: 100%;
+  }
+
+  .team-single-box.style1 .team-box-social {
+    width: 227px;
+    height: 243px;
+    right: 0;
+  }
+
+  .team-single-box.style1.active .team-box-social,
+  .team-single-box.style1:hover .team-box-social {
+    right: -34px !important;
+    top: -24px;
+    transform: rotate(15deg);
+  }
+
+  .team-single-box.style2 {
+    position: relative;
+    right: 42px;
+  }
+
+  .team-single-box.style2.active .team-box-social,
+  .team-single-box.style2:hover .team-box-social {
+    right: -30px;
+    top: -22px;
+    transform: rotate(14deg);
+  }
+
+  .team-single-box.style3 .team-box-thumb {
+    width: 234px;
+  }
+
+  .team-single-box.style3 .team-box-thumb img {
+    width: 100%;
+  }
+
+  .team-single-box.style3 .team-box-social {
+    width: 234px;
+    height: 251px;
+    right: 0;
+  }
+
+  .team-single-box.style3.active .team-box-social,
+  .team-single-box.style3:hover .team-box-social {
+    right: -33px;
+    top: -27px;
+    transform: rotate(14deg);
+  }
+
+  .team-single-box.style3 .team-box-title h5 {
+    font-size: 25px;
+  }
+
+  .team-desc p {
+    width: 90%;
+  }
+
+  /* Blog Section */
+
+  .img-box {
+    height: 330px;
+  }
+
+  .blog-box-title a {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Footer Section */
+
+  footer {
+    padding: 160px 0 0;
+  }
+
+  .footer-section::before {
+    width: 39rem;
+  }
+
+  .footer-section::after {
+    top: inherit;
+    bottom: 0;
+    width: 107%;
+    height: 43%;
+  }
+
+  .footer-right-title h2 {
+    padding-top: 30px;
+  }
+
+  .footer-right-desc p {
+    width: 60%;
+  }
+
+  .footer-bottom-desc p {
+    color: #ffffff;
+  }
+
+  .footer-bottom-desc p a {
+    mix-blend-mode: difference;
+  }
+
+  /* BreadCrumb Section */
+
+  video.breadcrumb-bg {
+    left: -80%;
+    width: auto;
+    height: 100%;
+  }
+
+  .breadcrumb-link ul {
+    gap: 30px;
+  }
+
+  .breadcrumb-desc p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+
+  /* Video Bg Inner Page */
+
+  .video-section .modal-bg {
+    min-height: 250px;
+  }
+
+  .video-section .video-section-btn {
+    width: 100px;
+    height: 100px;
+  }
+
+  a.video-btn {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+  }
+
+  .text-inner svg {
+    width: 100px;
+  }
+
+  .text-inner text {
+    font-size: 25px;
+  }
+
+  .video-btn i {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .video-btn i {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  /* About Us Inner Page */
+
+  .about-thumb img:nth-of-type(2) {
+    top: 50px;
+  }
+
+  .about-inner-content {
+    margin-top: 126px;
+  }
+
+  .about-inner-content::before {
+    bottom: 8px;
+    right: 24%;
+  }
+
+  /* NewsLetter Inner Page */
+
+  .newsletter-section .gneat-section-title h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .newsletter-form .app {
+    top: -2px;
+  }
+
+  .newsletter-form input {
+    padding: 14px 30px;
+    width: 260px;
+  }
+
+  /* About Me Inner page */
+
+  .about-me-thumb img {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .about-me-awards ul {
+    gap: 20px;
+  }
+
+  .about-me-awards li img {
+    width: 100%;
+  }
+
+  .team-details-skill-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-details-education-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-details-education-single-box:nth-of-type(1),
+  .team-details-education-single-box:nth-of-type(2),
+  .team-details-education-single-box:nth-of-type(3) {
+    border-bottom: 1px solid var(--border-1);
+  }
+
+  .team-details-education-single-box:nth-of-type(1),
+  .team-details-education-single-box:nth-of-type(3) {
+    border-right: 1px solid transparent;
+  }
+
+  /* About Me Inner Page Contact Section */
+
+  section.team-details-contact {
+    margin: 0;
+  }
+
+  .team-details-contact-desc p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .team-details-contact-form-top {
+    flex-direction: column;
+  }
+}
