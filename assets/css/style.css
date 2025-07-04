@@ -50,6 +50,30 @@
   filter: drop-shadow(1px 2px 1px #0c04424d);
 }
 
+.section-subtitle h6 {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #708bfd 0%, #fe71b9 100%);
+  box-shadow: 0px -4px 18.5px 0px #ffffffc9 inset,
+    0px -2px 4px 0px #ffffff00 inset;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--common-white);
+}
+
+.section-subtitle h6 i {
+  transform: rotate(-45deg);
+}
+
+.section-title h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+}
+
 /*----------------------------------------*/
 /*  Header Top Part Here
 /*----------------------------------------*/
@@ -685,6 +709,7 @@ section.banner-section {
   line-height: 32px;
   max-width: 570px;
   color: var(--text-body);
+  margin: 34px 0 50px;
 }
 
 .cta-and-contact {
@@ -724,15 +749,16 @@ section.banner-section {
   font-weight: 500;
 }
 
-ul.client-satisfaction-img {
-  display: flex;
-  margin-left: 11px;
-}
-
 .banner-client-satisfaction {
   display: flex;
   gap: 28px;
   align-items: center;
+  margin: 58px 0 0;
+}
+
+ul.client-satisfaction-img {
+  display: flex;
+  margin-left: 11px;
 }
 
 ul.client-satisfaction-img li {
@@ -772,19 +798,27 @@ p.client-satisfaction-desc span {
   font-weight: 600;
 }
 
+.banner-thumb {
+  position: absolute;
+  right: 0;
+  bottom: -52px;
+}
+
+.banner-thumb-inner {
+  position: relative;
+}
+
 .banner-video-btn {
   position: absolute;
-  top: 0;
-  left: 35%;
+  top: -72px;
+  left: 48.5%;
 }
 
 .banner-video-btn a {
-  font-size: 23px;
   width: 151px;
   height: 151px;
   border-radius: 50%;
   background: transparent;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -804,7 +838,7 @@ p.client-satisfaction-desc span {
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
-  z-index: -1;
+  z-index: -2;
 }
 
 .banner-video-btn::after {
@@ -813,7 +847,7 @@ p.client-satisfaction-desc span {
   inset: 0;
   border-radius: 50%;
   border: 2px dashed white;
-  z-index: 1;
+  z-index: -1;
 }
 
 .banner-video-btn .text-inner {
@@ -826,7 +860,7 @@ p.client-satisfaction-desc span {
 }
 
 .banner-video-btn .text-inner svg {
-  width: 124px;
+  width: 94px;
   height: auto;
   overflow: visible;
   word-spacing: 0px;
@@ -844,8 +878,9 @@ p.client-satisfaction-desc span {
   fill: var(--text-body);
   direction: ltr;
   transition: 0.3s stroke, 0.3s stroke-width, 0.3s fill;
-  font-size: 25px;
+  font-size: 58px;
   font-weight: 300;
+  letter-spacing: 2px;
 }
 
 .banner-play-icon {
@@ -864,124 +899,227 @@ p.client-satisfaction-desc span {
   font-size: 18px;
 }
 
-.banner-thumb {
+.banner-shape {
   position: absolute;
+  top: -100px;
   right: 0;
-  bottom: -52px;
 }
 
-.banner-thumb-inner {
-  position: relative;
-}
-
-/*--------------------------------------------
-    Start  Section Here
---------------------------------------------*/
-
-/*--------------------------------------------
-    Start Content Slider Section Here
---------------------------------------------*/
-
-section.content-slide-section {
-  position: relative;
-  z-index: 9;
-}
-
-section.content-slide-section.style2 {
-  margin: 152px 0 32px;
-}
-
-section.content-slide-section.style3 {
-  margin: 0 0 186px;
-}
-
-section.content-slide-section.style4 {
-  margin: 24px 0 56px;
-}
-
-section.content-slide-section.style5 {
-  margin: 148px 0 184px;
-}
-
-.content-slider-bg {
-  background: var(--common-black);
-  padding: 20px 0;
-  --duration: 50s;
-  --gap: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  gap: 0px;
-  position: relative;
-}
-
-.content-slider-bg::before {
+.banner-shape2 {
   position: absolute;
-  content: "";
-  top: 0;
+  bottom: -240px;
   left: 0;
+}
+
+.banner-shape3 {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+}
+
+.banner-shape3 img {
+  -webkit-animation: rotated 6.5s linear infinite;
+  animation: rotated 6.5s linear infinite;
+}
+
+/*------------------------------------------
+      <-- Marquee CSS Start Here -->
+-------------------------------------------*/
+
+section.marquee-section {
   width: 100%;
-  height: 100%;
-  background: var(--theme-1);
-  transform: rotate(-1deg);
-  z-index: -1;
-}
-
-.content-slider {
-  text-align: center;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  gap: 0px;
-  min-width: 100%;
-  -webkit-animation: scroll 50s linear infinite;
-  animation: scroll 50s linear infinite;
-}
-
-.content-slider-content {
   position: relative;
-  --duration: 50s;
-  --gap: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  z-index: 1;
+}
+
+.marquee-container {
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  background: linear-gradient(90deg, var(--theme-2) 0%, var(--theme-3) 100%);
+  padding: 23px 0 19px;
+  z-index: 2;
+}
+
+.marquee-track {
+  display: inline-flex;
+  will-change: transform;
+  -webkit-animation: marquee 35s linear infinite;
+  animation: marquee 35s linear infinite;
+}
+
+.marquee-item {
   display: flex;
-  overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  gap: 0px;
+  align-items: center;
 }
 
-.content-slider-content h2 {
-  font-size: 30px;
-  line-height: 60px;
-  color: var(--common-white);
-  font-weight: 600;
-  margin: 0 40px 0 0;
+.marquee-text {
+  display: inline-block;
+  margin: 0px 23px;
+  font-size: 61px;
+  font-family: "Inter", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--common-white);
   text-transform: uppercase;
+  font-weight: 700;
 }
 
-.content-slider-content i {
-  color: var(--theme-1);
-  -webkit-animation: rotated 10s linear infinite;
-  animation: rotated 10s linear infinite;
+.marquee-icon {
+  display: inline-block;
+  width: 42px;
+  padding-top: 0.25rem;
 }
 
-/*--------------------------------------------
-    Start Counter Section Here
---------------------------------------------*/
+.marquee-icon img {
+  -webkit-animation: rotated 6.5s linear infinite;
+  animation: rotated 6.5s linear infinite;
+}
+
+.marquee-border1 {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 40%;
+}
+
+.marquee-border1 span {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(102.44deg, #5163ff -0.32%, #fe71b9 100%);
+  position: relative;
+  display: inline-block;
+  transform: rotate(1.31deg);
+}
+
+.marquee-border1 span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px dashed white;
+  z-index: 1;
+}
+
+.marquee-border2 {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 40%;
+}
+
+.marquee-border2 span {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(102.44deg, #5163ff -0.32%, #fe71b9 100%);
+  position: relative;
+  display: inline-block;
+  transform: rotate(-1.31deg);
+}
+
+.marquee-border2 span::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px dashed white;
+  z-index: 1;
+}
+
+/*------------------------------------------
+        <-- About CSS Start Here -->
+-------------------------------------------*/
+
+section.about-section {
+  padding: 142px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about-thumb {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+}
+
+.about-thumb img.fade-right {
+  margin: 0 0 -67px -58px;
+}
+
+.about-inner-svg {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 151px;
+  height: 151px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-inner-svg .text-inner {
+  -webkit-animation: rotated 15s linear infinite;
+  animation: rotated 15s linear infinite;
+}
+
+.about-inner-svg a:hover .text-inner {
+  animation-play-state: paused;
+}
+
+.about-inner-svg .text-inner svg {
+  width: 94px;
+  height: auto;
+  overflow: visible;
+  word-spacing: 0px;
+  transform: rotate(0) scaleX(1) scaleY(1);
+}
+
+.about-inner-svg .text-inner path {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 1px;
+  transition: 0.3s stroke, 0.3s fill;
+}
+
+.about-inner-svg .text-inner text {
+  fill: var(--text-body);
+  direction: ltr;
+  transition: 0.3s stroke, 0.3s stroke-width, 0.3s fill;
+  font-size: 58px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.about-svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  margin: 0 0 0 76px;
+}
+
+.about-desc p {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text-body);
+  max-width: 565px;
+  width: 100%;
+}
+
+/*------------------------------------------
+        <-- Banner CSS Start Here -->
+-------------------------------------------*/
 
 section.counter-section {
   background: var(--common-bg2);

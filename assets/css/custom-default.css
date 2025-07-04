@@ -79,6 +79,7 @@ body {
 p {
   font-style: normal;
   font-weight: 400;
+  margin: 0;
 }
 
 h1,
