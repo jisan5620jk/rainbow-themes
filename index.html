@@ -583,36 +583,51 @@
                     class="fade-right"
                   />
                   <div class="about-inner-svg">
-                    <div class="text-inner">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="250.5"
-                        height="250.5"
-                        viewBox="0 0 250.5 250.5"
-                      >
-                        <path
-                          d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125"
-                          id="e-path-35ee1b2"
-                        ></path>
-                        <text>
-                          <textPath
-                            id="e-text-path-35ee1b2"
-                            href="#e-path-35ee1b2"
-                            startOffset="0%"
-                          >
-                            <span>30+</span>
-                            Years of experience -
-                          </textPath>
-                        </text>
-                      </svg>
+                    <div>
+                      <div class="text-inner">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="250.5"
+                          height="250.5"
+                          viewBox="0 0 250.5 250.5"
+                        >
+                          <defs>
+                            <linearGradient
+                              id="gradientText"
+                              gradientTransform="rotate(102.53)"
+                            >
+                              <stop offset="0%" stop-color="#5163ff" />
+                              <stop offset="49.84%" stop-color="#c872f2" />
+                              <stop offset="99.68%" stop-color="#fe72ba" />
+                            </linearGradient>
+                          </defs>
+                          <path
+                            d="M.25,125.25a125,125,0,1,1,125,125,125,125,0,0,1-125-125"
+                            id="e-path-35ee1b2"
+                          ></path>
+                          <text>
+                            <textPath href="#e-path-35ee1b2" startOffset="0%">
+                              <tspan
+                                class="about-svg-mark"
+                                fill="url(#gradientText)"
+                              >
+                                30+
+                              </tspan>
+                              <tspan>Years of experience -</tspan>
+                            </textPath>
+                          </text>
+                        </svg>
+                      </div>
+                      <span class="about-svg-icon">
+                        <div>
+                          <img
+                            src="assets/images/main-thumb/svg-icon.png"
+                            alt="Svg Icon"
+                            draggable="false"
+                          />
+                        </div>
+                      </span>
                     </div>
-                    <span class="about-svg-icon">
-                      <img
-                        src="assets/images/main-thumb/svg-icon.png"
-                        alt="Svg Icon"
-                        draggable="false"
-                      />
-                    </span>
                   </div>
                 </div>
               </div>
@@ -645,7 +660,7 @@
                     <div class="about-ceo">
                       <div class="about-ceo-img">
                         <img
-                          src="assets/images/main-thumb/ceo-thumb.png"
+                          src="assets/images/main-thumb/ceo-img.png"
                           alt="About Ceo"
                           draggable="false"
                         />
@@ -666,6 +681,13 @@
               </div>
             </div>
           </div>
+          <div class="about-shape">
+            <img
+              src="assets/images/main-thumb/about-shape.png"
+              alt="About Shape"
+              draggable="false"
+            />
+          </div>
         </section>
 
         <!--==================================================-->
@@ -681,107 +703,63 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="counter-box">
-                  <div class="counter_wrapper">
-                    <div class="counter-single-box counter-item">
-                      <div
-                        class="counter-title odometer-wrapper"
-                        data-count="23"
-                      >
-                        <h1 class="odometer"></h1>
-                        <h1>k+</h1>
-                      </div>
-                      <div class="counter-content">
-                        <div class="counter-content-icon">
-                          <img
-                            decoding="async"
-                            src="assets/images/icon/counter-icon.png"
-                            alt="icon"
-                          />
-                        </div>
-                        <div class="counter-desc">
-                          <p>
-                            Executed <br />
-                            Projects
-                          </p>
-                        </div>
+                  <div class="counter-single-box">
+                    <div class="counter-title odometer-wrapper" data-count="92">
+                      <h1 class="odometer"></h1>
+                      <h3>%</h3>
+                    </div>
+                    <div class="counter-content">
+                      <div class="counter-desc">
+                        <p>Business Strategy</p>
                       </div>
                     </div>
                   </div>
-                  <div class="counter_wrapper">
-                    <div class="counter-single-box counter-item">
-                      <div
-                        class="counter-title odometer-wrapper"
-                        data-count="12"
-                      >
-                        <h1 class="odometer"></h1>
-                        <h1>k+</h1>
-                      </div>
-                      <div class="counter-content">
-                        <div class="counter-content-icon">
-                          <img
-                            decoding="async"
-                            src="assets/images/icon/counter-icon2.png"
-                            alt="icon"
-                          />
-                        </div>
-                        <div class="counter-desc">
-                          <p>
-                            Satisfied <br />
-                            Clients
-                          </p>
-                        </div>
+                  <div class="counter-single-box">
+                    <div class="counter-title odometer-wrapper" data-count="80">
+                      <h1 class="odometer"></h1>
+                      <h3>%</h3>
+                    </div>
+                    <div class="counter-content">
+                      <div class="counter-desc">
+                        <p>Targeted Acquisition</p>
                       </div>
                     </div>
                   </div>
-                  <div class="counter_wrapper">
-                    <div class="counter-single-box counter-item">
-                      <div
-                        class="counter-title odometer-wrapper"
-                        data-count="19"
-                      >
-                        <h1 class="odometer"></h1>
-                        <h1>+</h1>
-                      </div>
-                      <div class="counter-content">
-                        <div class="counter-content-icon">
-                          <img
-                            decoding="async"
-                            src="assets/images/icon/counter-icon3.png"
-                            alt="icon"
-                          />
-                        </div>
-                        <div class="counter-desc">
-                          <p>
-                            Years of <br />
-                            Expertise
-                          </p>
-                        </div>
+                  <div class="counter-single-box">
+                    <div class="counter-title odometer-wrapper" data-count="62">
+                      <h1 class="odometer"></h1>
+                      <h2>K</h2>
+                      <h3>+</h3>
+                    </div>
+                    <div class="counter-content">
+                      <div class="counter-desc">
+                        <p>Complete Projects</p>
                       </div>
                     </div>
                   </div>
-                  <div class="counter_wrapper">
-                    <div class="counter-single-box counter-item">
-                      <div
-                        class="counter-title odometer-wrapper"
-                        data-count="98"
-                      >
-                        <h1 class="odometer"></h1>
-                        <h1>+</h1>
+                  <div class="counter-single-box">
+                    <div class="counter-title odometer-wrapper" data-count="15">
+                      <h1 class="odometer"></h1>
+                      <h2>K</h2>
+                      <h3>+</h3>
+                    </div>
+                    <div class="counter-content">
+                      <div class="counter-desc">
+                        <p>Happy Customers</p>
                       </div>
-                      <div class="counter-content">
-                        <div class="counter-content-icon">
-                          <img
-                            decoding="async"
-                            src="assets/images/icon/counter-icon4.png"
-                            alt="icon"
-                          />
-                        </div>
-                        <div class="counter-desc">
-                          <p>
-                            Recognition of <br />
-                            Achievement
-                          </p>
-                        </div>
+                    </div>
+                  </div>
+                  <div class="counter-single-box">
+                    <div
+                      class="counter-title odometer-wrapper"
+                      data-count="100"
+                    >
+                      <h1 class="odometer"></h1>
+                      <h3>+</h3>
+                    </div>
+                    <div class="counter-content">
+                      <div class="counter-desc">
+                        <p>Consultant Advisors</p>
                       </div>
                     </div>
                   </div>
@@ -792,6 +770,27 @@
           <div class="blur-bg"></div>
         </section>
 
+        <!--==================================================-->
+        <!-- End Rainbow Themes Counter Section Here -->
+        <!--==================================================-->
+
+        <!--==================================================-->
+        <!-- Start Rainbow Themes Project Section Here -->
+        <!--==================================================-->
+
+        <div class="container">
+          <div class="project-pin-wrapper">
+            <div class="project-panel-pin" style="background: #d1e3ff">
+              Panel 1
+            </div>
+            <div class="project-panel-pin" style="background: #ffe4e1">
+              Panel 2
+            </div>
+            <div class="project-panel-pin" style="background: #e6ffe6">
+              Panel 3
+            </div>
+          </div>
+        </div>
         <!--==================================================-->
         <!-- End Rainbow Themes Counter Section Here -->
         <!--==================================================-->
@@ -818,45 +817,27 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="project-btn">
-                  <div class="btn_wrapper">
-                    <a
-                      href="project.html"
-                      class="Rainbow Themes-primary-btn icon-style btn-hover btn-item"
-                      ><svg
-                        class="qodef-svg--custom-arrow qodef-m-arrow"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="14.2"
-                        height="14.2"
-                        viewBox="0 0 14.2 14.2"
-                      >
-                        <g>
-                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
-                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
-                        </g>
-                        <g>
-                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
-                          <path d="M13.2 9V1h-8M13.4.8.7 13.5"></path>
-                        </g>
-                      </svg>
-                      See more
-                      <img
-                        decoding="async"
-                        src="assets/images/main-thumb/about/Rainbow Themes-btn-line.png"
-                        alt="line" /><span></span
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
 
         <!--==================================================-->
         <!-- End Rainbow Themes Project Section Here -->
+        <!--==================================================-->
+
+        <!--==================================================-->
+        <!-- Start Rainbow Themes Footer Section Here -->
+        <!--==================================================-->
+
+        <footer class="footer-section">
+          <div class="container">
+            <div class="footer-container">
+              <div class="footer-info"></div>
+              <div class="footer-links"></div>
+            </div>
+          </div>
+        </footer>
+
+        <!--==================================================-->
+        <!-- End Rainbow Themes Footer Section Here -->
         <!--==================================================-->
       </div>
     </div>

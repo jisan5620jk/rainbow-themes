@@ -52,7 +52,7 @@
 
 .section-subtitle h6 {
   display: inline-flex;
-  gap: 6px;
+  gap: 8px;
   align-items: center;
   padding: 12px 16px;
   border-radius: 50px;
@@ -72,6 +72,7 @@
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
+  margin: 28px 0 0;
 }
 
 /*----------------------------------------*/
@@ -1032,7 +1033,7 @@ section.marquee-section {
 -------------------------------------------*/
 
 section.about-section {
-  padding: 142px 0;
+  padding: 142px 0 137px;
   position: relative;
   z-index: 1;
 }
@@ -1051,15 +1052,45 @@ section.about-section {
 
 .about-inner-svg {
   position: absolute;
-  top: 0;
-  right: 50px;
-  width: 151px;
-  height: 151px;
+  top: 25px;
+  right: 18px;
+}
+
+.about-inner-svg > div {
+  width: 178px;
+  height: 178px;
   border-radius: 50%;
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.about-inner-svg > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed transparent;
+  background-image: linear-gradient(
+    180deg,
+    rgba(81, 99, 255, 0.1),
+    rgba(254, 113, 185, 0.1)
+  );
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -2;
+}
+
+.about-inner-svg > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed white;
+  z-index: -1;
 }
 
 .about-inner-svg .text-inner {
@@ -1072,7 +1103,7 @@ section.about-section {
 }
 
 .about-inner-svg .text-inner svg {
-  width: 94px;
+  width: 108px;
   height: auto;
   overflow: visible;
   word-spacing: 0px;
@@ -1090,9 +1121,10 @@ section.about-section {
   fill: var(--text-body);
   direction: ltr;
   transition: 0.3s stroke, 0.3s stroke-width, 0.3s fill;
-  font-size: 58px;
-  font-weight: 300;
-  letter-spacing: 2px;
+  font-size: 46px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .about-svg-icon {
@@ -1100,9 +1132,41 @@ section.about-section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.about-svg-icon > div {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 78px;
+  height: 78px;
+}
+
+.about-svg-icon > div::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed transparent;
+  background-image: linear-gradient(
+    180deg,
+    rgba(81, 99, 255, 0.1),
+    rgba(254, 113, 185, 0.1)
+  );
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: -2;
+}
+
+.about-svg-icon > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px dashed white;
+  z-index: -1;
 }
 
 .about-content {
@@ -1115,84 +1179,151 @@ section.about-section {
   color: var(--text-body);
   max-width: 565px;
   width: 100%;
+  margin: 18px 0 32px;
+}
+
+ul.about-item-list li {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-body);
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 20px;
+}
+
+ul.about-item-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 26px;
+  height: 26px;
+  background: var(--common-white);
+  border-radius: 50%;
+  box-shadow: 0px 8px 15.7px 0px #0c044212;
+}
+
+ul.about-item-list li:after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8.5px;
+  height: 8.5px;
+  background: radial-gradient(circle, var(--theme-2) 0%, var(--theme-1) 40%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.about-info {
+  display: flex;
+  gap: 28px;
+  margin-top: 51px;
+}
+
+.about-ceo {
+  display: flex;
+  gap: 2px;
+  margin: -12px 0 0;
+}
+
+.about-ceo-info {
+  margin: 12px 0 0;
+}
+
+.about-ceo-sign {
+  border-bottom: 1px solid rgb(0 35 75 / 15%);
+  padding-bottom: 6px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.about-ceo-info p {
+  font-size: 14px;
+  color: var(--text-body);
+  text-align: center;
+}
+
+.about-shape {
+  position: absolute;
+  top: 23%;
+  right: 0;
 }
 
 /*------------------------------------------
-        <-- Banner CSS Start Here -->
+      <-- Counter CSS Start Here -->
 -------------------------------------------*/
 
 section.counter-section {
-  background: var(--common-bg2);
   position: relative;
   z-index: 20;
 }
 
-section.counter-section .blur-bg {
-  height: 400px;
-  width: 400px;
-  right: -200px;
-  top: -140px;
-  filter: blur(180px);
-}
-
 .counter-box {
   display: flex;
-}
-
-.counter_wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  height: 370px;
-  width: 370px;
-  border-radius: 100%;
-  margin-left: -40px;
-}
-
-.counter_wrapper:first-child {
-  margin-left: 0px;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
 }
 
 .counter-single-box {
-  height: 370px;
-  width: 370px;
-  border-radius: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--border-1);
+  max-width: 200px;
+  width: 100%;
+  border-top: 2px solid rgb(0, 35, 75, 0.15);
+  padding-top: 22px;
+  transition: all 0.5s linear;
+}
+
+.counter-single-box:hover {
+  border-color: var(--theme-1);
 }
 
 .counter-title {
   display: flex;
+  align-items: end;
 }
 
 .counter-title h1 {
-  font-size: 60px;
-  line-height: 63px;
+  font-size: 80px;
+  line-height: 65px;
   color: var(--text-heading);
-  font-weight: 500;
+  font-weight: 400;
 }
 
-.counter-content {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 8px;
+.counter-title h2 {
+  font-size: 80px;
+  line-height: 82px;
+  color: var(--text-heading);
+  font-weight: 400;
+}
+
+.counter-title h3 {
+  font-size: 50px;
+  line-height: 56px;
+  color: var(--text-heading);
+  font-weight: 400;
 }
 
 .counter-desc p {
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
   color: var(--text-body);
-  font-weight: 500;
-  margin: 0;
+  margin: 14px 0 0;
+}
+
+/*------------------------------------------
+      <-- Counter CSS Start Here -->
+-------------------------------------------*/
+
+.project-pin-wrapper {
+  overflow: hidden;
+}
+
+.project-panel-pin {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }

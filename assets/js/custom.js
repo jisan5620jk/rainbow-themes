@@ -1,10 +1,77 @@
 (function () {
   ("use strict");
 
-    let device_width = window.innerWidth;
+  let device_width = window.innerWidth;
 
   // 07. Odometer CounterUp
   /////////////////////////////////////////
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const width = window.innerWidth;
+
+    if (width >= 1200) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      const ctx = gsap.context(() => {
+        const panels = gsap.utils.toArray(".project-panel-pin");
+
+        panels.forEach((panel, index) => {
+          gsap.set(panel, { zIndex: 10 + index });
+
+          gsap.set(panel, { top: index * 100 });
+
+          ScrollTrigger.create({
+            trigger: panel,
+            start: "top 10%",
+            end:
+              width >= 1600
+                ? "bottom 90%"
+                : width >= 1400
+                ? "bottom 145%"
+                : "bottom 150%",
+            endTrigger: ".project-pin-wrapper",
+            pin: true,
+            pinSpacing: false, // false থেকে true করুন অথবা বাদ দিন এটা
+            scrub: 1,
+            markers: false,
+          });
+
+          ScrollTrigger.create({
+            trigger: panel,
+            start: "top 10%",
+            end:
+              width >= 1600
+                ? "bottom 90%"
+                : width >= 1400
+                ? "bottom 145%"
+                : "bottom 150%",
+            scrub: 1,
+            markers: false,
+            onUpdate: (self) => {
+              const baseScaleAtProgress1 = 0.8;
+              const scaleStep = 0.1;
+
+              const minScale = baseScaleAtProgress1 + index * scaleStep;
+              const scale = 1 - self.progress * (1 - minScale);
+
+              const maxBlur = 5;
+              const blur = gsap.utils.mapRange(1, minScale, 0, maxBlur, scale);
+
+              gsap.to(panel, {
+                scale,
+                filter: `blur(${blur}px)`,
+                overwrite: true,
+                duration: 0.3,
+                ease: "power2.out",
+              });
+            },
+          });
+        });
+      });
+
+      return () => ctx.revert();
+    }
+  });
 
   // 23. Fade Scroll Animations
   ////////////////////////////////////////////////////
