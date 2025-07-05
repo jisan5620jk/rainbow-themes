@@ -13,25 +13,20 @@
       gsap.registerPlugin(ScrollTrigger);
 
       const ctx = gsap.context(() => {
-        const panels = gsap.utils.toArray(".project-panel-pin");
+        const panels = gsap.utils.toArray(".service-panel-pin");
 
         panels.forEach((panel, index) => {
           gsap.set(panel, { zIndex: 10 + index });
 
-          gsap.set(panel, { top: index * 100 });
+          gsap.set(panel, { top: index * 80 });
 
           ScrollTrigger.create({
             trigger: panel,
             start: "top 10%",
-            end:
-              width >= 1600
-                ? "bottom 90%"
-                : width >= 1400
-                ? "bottom 145%"
-                : "bottom 150%",
-            endTrigger: ".project-pin-wrapper",
+            endTrigger: ".service-pin-wrapper",
+            end: "bottom 90%",
             pin: true,
-            pinSpacing: false, // false থেকে true করুন অথবা বাদ দিন এটা
+            pinSpacing: false,
             scrub: 1,
             markers: false,
           });
@@ -39,18 +34,23 @@
           ScrollTrigger.create({
             trigger: panel,
             start: "top 10%",
-            end:
-              width >= 1600
-                ? "bottom 90%"
-                : width >= 1400
-                ? "bottom 145%"
-                : "bottom 150%",
+            end: "bottom 100%",
             scrub: 1,
             markers: false,
             onUpdate: (self) => {
-              const baseScaleAtProgress1 = 0.8;
-              const scaleStep = 0.1;
+              if (index === panels.length - 1) {
+                gsap.to(panel, {
+                  scale: 1,
+                  filter: "none",
+                  overwrite: true,
+                  duration: 0.3,
+                  ease: "power2.out",
+                });
+                return;
+              }
 
+              const baseScaleAtProgress1 = 0.8;
+              const scaleStep = 0.05;
               const minScale = baseScaleAtProgress1 + index * scaleStep;
               const scale = 1 - self.progress * (1 - minScale);
 
@@ -220,47 +220,28 @@
     });
   });
 
-  // 37. Work Process Slider
+  // 37. testi Process Slider
   ///////////////////////////////////////////////////////
 
-  const workSlider = new Swiper(".work-process-slider", {
-    // Optional parameters
-    grabCursor: true,
-    speed: 1500,
-    loop: true,
-    autoplay: {
-      delay: 5000, // Autoplay delay in milliseconds
-      disableOnInteraction: false,
+  var swiper = new Swiper(".testi-thumb-slider", {
+    spaceBetween: 18,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesProgress: true,
+    centeredSlides: true,
+  });
+  var swiper2 = new Swiper(".testi-slider-content", {
+    navigation: {
+      nextEl: ".swiper-next-arrow",
+      prevEl: ".swiper-prev-arrow",
     },
-    spaceBetween: 28,
-    slidesPerView: 1,
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-      a11y: false,
-    },
-    // Navigation dots
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    thumbs: {
+      swiper: swiper,
     },
   });
 
   // 53. Footer Copyright
   ////////////////////////////////////////////////
 
-  $("#copyYear").text(new Date().getFullYear());
+  $(".copy-year").text(new Date().getFullYear());
 })(jQuery);
